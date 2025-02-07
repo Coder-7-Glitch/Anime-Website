@@ -1,0 +1,39 @@
+.footer-section {
+    background: #2c2c2c;
+}
+
+.footer-heading h4 {
+    color: #ff640a;
+}
+
+.footer-content h4 {
+    color: #ff640a;
+}
+
+.footer-content p {
+    color: #D1D5DB;
+}
+
+.footer-item {
+    margin-bottom: 8px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #D1D5DB;
+    transition: .1s linear;
+    font-size: 17px;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #ff640a;
+}
+
+.copyright-section {
+    background: #ff640a;
+}
+
+.copyright-section p {
+    font-size: 18px;
+}
