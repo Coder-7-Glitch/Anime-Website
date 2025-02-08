@@ -7,18 +7,16 @@ import '../CSS/footer.css'
 function Footer() {
     return (
         <div>
-            <section className="footer-section">
+            <footer className="footer-section">
                 <Container>
-                    <Row className='row-gap-5 gap-lg-4'>
+                    <Row className='row-gap-5 text-md-start text-center'>
                         <Col lg={3} md={6}>
-                            <div className="footer-heading d-flex justify-content-center gap-2">
-                                <div className="footer-img">
-                                    <img src="/assets/icons/logo.svg" alt="" width={30} />
-                                </div>
-                                <div className="footer-content">
-                                    <h4 className="fw-medium mb-3">Anime Saga</h4>
-                                    <p>We provide high-quality anime streaming with fast updates and a seamless experience.</p>
-                                </div>
+                            <div className="footer-heading d-flex align-items-center gap-2 justify-content-lg-start justify-content-center">
+                                <img src="/assets/icons/logo.svg" alt="" width={30} />
+                                <span className="fw-medium mb-3">Anime Saga</span>
+                            </div>
+                            <div className="footer-content">
+                                <p>We provide high-quality anime streaming with fast updates and a seamless experience.</p>
                             </div>
                         </Col>
                         <Col lg={2} md={6}>
@@ -99,10 +97,10 @@ function Footer() {
                         </Col>
                     </Row>
                 </Container>
-            </section>
-                    <div className="copyright-section text-center py-1">
-                        <p className='mt-3 fw-medium'>© Copyright 2025 Anime Saga. All rights reserved</p>
-                    </div>
+            </footer>
+                <div className="copyright-section text-center py-1">
+                    <p className='mt-3 fw-medium'>© Copyright 2025 Anime Saga. All rights reserved</p>
+                </div>
         </div>
     )
 }

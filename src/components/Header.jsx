@@ -22,8 +22,8 @@ function Header() {
                     {/* Left Contents start */}
                     <Nav className="me-auto gap-1">
                         <Link to={"/"} className='nav-link header-link fw-medium'>Home</Link>
-                        <Link to={"/"} className='nav-link header-link fw-medium'>About</Link>
-                        <Link to={"/"} className='nav-link header-link fw-medium'>Latest Anime</Link>
+                        <Link to={"/About"} className='nav-link header-link fw-medium'>About</Link>
+                        <Link to={"/latestAnime"} className='nav-link header-link fw-medium'>Latest Anime</Link>
                         <Dropdown>
                             <Dropdown.Toggle className='bg-transparent border-0 d-flex gap-2' id="headerDropdown">
                                 Browser <span><LuChevronDown className='header-dropdown-toggle' onClick={Toggle} /></span>
@@ -35,7 +35,7 @@ function Header() {
                                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        <Link to={"/"} className='nav-link header-link fw-medium'>News</Link>
+                        <Link to={"/News"} className='nav-link header-link fw-medium'>News</Link>
                     </Nav>
                     {/* Left Contents end */}
                     {/* Right Contents start */}

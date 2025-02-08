@@ -1,0 +1,43 @@
+.home-section {
+    background: linear-gradient(56deg, #000 22%, #bfa6a600), url(/assets/img/home-img.jpg) center no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+    padding-top: 15rem !important;
+}
+.home-img img {
+    width: 25%;
+    transform: rotate(10deg);
+}
+.age {
+    background: #3f3f46;
+    width: 35px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+}
+.age small {
+    color: #e4e4e7;
+    font-weight: 500;
+}
+.dot h6 {
+    color: #e4e4e7;
+    font-weight: 900;
+    font-size: 20px;
+}
+.category h6 {
+    color: #a1a1aa;
+}
+.description {
+    width: 50%;
+    color: #d1d5db;
+    font-weight: 400;
+}
+.watch-btn {
+    font-size: 16px;
+    background: #ff640a;
+    border: 0;
+    font-weight: 500;
+    color: #e4e4e7;
+}

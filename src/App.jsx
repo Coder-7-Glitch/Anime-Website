@@ -1,9 +1,12 @@
 import React from 'react'
 import './App.css'
 import Header from './components/Header'
-import { Route, Routes } from "react-router";
-import Homepage from "./Pages/HomePage";
 import Footer from './components/Footer';
+import { Route, Routes } from "react-router";
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
+import LatestAnimePage from "./Pages/LatestAnimePage";
+import NewsPage from "./Pages/NewsPage";
 
 function App() {
 
@@ -11,7 +14,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path='/Home' element={<Homepage />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/About' element={<AboutPage />} />
+        <Route path='/latestAnime' element={<LatestAnimePage />} />
+        <Route path='/News' element={<NewsPage />} />
       </Routes>
       <Footer />
     </>

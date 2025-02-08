@@ -1,9 +1,10 @@
 import React from 'react'
+import Lookism from '../components/Lookism'
 
 export default function HomePage() {
   return (
     <div>
-      <h1>a</h1>
+      <Lookism />
     </div>
   )
 }
