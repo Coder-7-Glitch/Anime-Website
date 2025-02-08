@@ -1,0 +1,8 @@
+@media (max-width: 992px) {
+    .description {
+        width: 100% !important;
+    }
+    .home-img {
+        width: 100% !important;
+    }
+}
