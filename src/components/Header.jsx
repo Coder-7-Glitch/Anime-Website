@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 import { LuChevronDown } from "react-icons/lu";
 import { FaRegBookmark } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
-import '../CSS/header.css'
+import '../universal-css/header.css'
 
 function Header() {
     function Toggle() {
@@ -16,7 +16,7 @@ function Header() {
     return (
         <Navbar expand="lg" className='header'>
             <Container>
-                <Link to={"/Home"} className='d-flex align-items-center justify-content-center gap-2 navbar-brand'><img src="/assets/icons/logo.svg" alt="" width={35} /><h3 className="fw-normal">AnimeSaga</h3></Link>
+                <Link to={"/"} className='d-flex align-items-center justify-content-center gap-2 navbar-brand'><img src="/assets/icons/logo.svg" alt="" width={35} /><h3 className="fw-normal">AnimeSaga</h3></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/* Left Contents start */}

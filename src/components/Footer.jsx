@@ -2,7 +2,8 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import '../CSS/footer.css'
+import '../universal-css/footer.css'
+import { Link } from 'react-router';
 
 function Footer() {
     return (
@@ -25,16 +26,16 @@ function Footer() {
                             </div>
                             <ul className="footer-list list-unstyled">
                                 <li className="footer-item">
-                                    <a href="#" className="footer-link">Home</a>
+                                    <Link to={"/"} className="footer-link">Home</Link>
                                 </li>
                                 <li className="footer-item">
-                                    <a href="#" className="footer-link">About</a>
+                                    <Link to={"/About"} className="footer-link">About</Link>
                                 </li>
                                 <li className="footer-item">
-                                    <a href="#" className="footer-link">Latest Anime</a>
+                                    <Link to={"/latestAnime"} className="footer-link">Latest Anime</Link>
                                 </li>
                                 <li className="footer-item">
-                                    <a href="#" className="footer-link">News</a>
+                                    <Link to={"/News"} className="footer-link">News</Link>
                                 </li>
                             </ul>
                         </Col>
