@@ -9,7 +9,7 @@ import MoviesAnime from "../components/Home/MoviesAnime";
 import BannerCard from "../components/Home/BannerCard";
 import RowCard from "../components/Home/RowCard";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
       <Lookism />

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { HiMiniXMark } from "react-icons/hi2";
 
-export default function About() {
+export default function AboutPage() {
   const Card = useRef();
   const Main = useRef();
   function dBlockCard() {

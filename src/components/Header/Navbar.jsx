@@ -72,7 +72,7 @@ export default function Navbar() {
                 <Link to={'/about-page'} className='font-medium text-[17px]'>About</Link>
               </li>
               <li>
-                <Link to={'/'} className='font-medium text-[17px]'>Latest Anime</Link>
+                <Link to={'/latest-anime'} className='font-medium text-[17px]'>Latest Anime</Link>
               </li>
               {/* <!-- Dropdown start */}
               <li>
@@ -108,10 +108,10 @@ export default function Navbar() {
                 <Link to={'/'}>Home</Link>
               </li>
               <li className='font-medium text-[17px] px-5 py-3 w-full active:bg-zinc-800'>
-                <Link to={'/'}>About</Link>
+                <Link to={'/about-page'}>About</Link>
               </li>
               <li className='font-medium text-[17px] px-5 py-3 w-full active:bg-zinc-800'>
-                <Link to={'/'}>Latest Anime</Link>
+                <Link to={'/latest-anime'}>Latest Anime</Link>
               </li>
               {/* <!-- Dropdown start */}
               <li>
@@ -125,7 +125,7 @@ export default function Navbar() {
                       <ul className='py-1 text-[15px] text-zinc-200'>
                         {dropdownLists.map((dropdownList) => (
                           <li key={dropdownList} className='px-4 py-2 cursor-pointer hover:bg-zinc-800' onClick={closeDropdown}>
-                            {dropdownList}
+                              {dropdownList}
                           </li>
                         ))}
                       </ul>
