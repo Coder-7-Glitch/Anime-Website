@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoChevronDown } from "react-icons/io5";
+import { FaChevronDown } from "react-icons/fa";
 import { IoBookmarkOutline } from "react-icons/io5";
 import { MdOutlineSearch } from "react-icons/md";
 
@@ -69,7 +69,7 @@ export default function Navbar() {
                 <Link to={'/'} className='font-medium text-[17px]'>Home</Link>
               </li>
               <li>
-                <Link to={'/'} className='font-medium text-[17px]'>About</Link>
+                <Link to={'/about-page'} className='font-medium text-[17px]'>About</Link>
               </li>
               <li>
                 <Link to={'/'} className='font-medium text-[17px]'>Latest Anime</Link>
@@ -79,7 +79,9 @@ export default function Navbar() {
                 <div className="relative inline-block text-left w-full active:bg-zinc-800">
                   <button type="button" onClick={() => setIsOpen(!isOpen)} className='flex w-full justify-between items-center gap-2 font-medium text-[17px] rounded-md focus:outline-none'>
                     Browse
-                    <IoChevronDown />
+                    <FaChevronDown className={`transition-transform ${
+                      isOpen ? "rotate-180" : "rotate-0"
+                    }`} />
                   </button>
                   {isOpen && (
                     <div className="absolute left-0 z-10 mt-2 w-48 rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
@@ -109,7 +111,28 @@ export default function Navbar() {
                 <Link to={'/'}>About</Link>
               </li>
               <li className='font-medium text-[17px] px-5 py-3 w-full active:bg-zinc-800'>
-                <Link to={'/'}>New Anime</Link>
+                <Link to={'/'}>Latest Anime</Link>
+              </li>
+              {/* <!-- Dropdown start */}
+              <li>
+                <div className="relative inline-block text-left px-5 py-3 w-full active:bg-zinc-800">
+                  <button type="button" onClick={() => setIsOpen(!isOpen)} className='flex w-full justify-between items-center gap-2 font-medium text-[17px] rounded-md focus:outline-none'>
+                    Browse
+                    <FaChevronDown />
+                  </button>
+                  {isOpen && (
+                    <div className="absolute left-0 z-10 mt-2 w-48 rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
+                      <ul className='py-1 text-[15px] text-zinc-200'>
+                        {dropdownLists.map((dropdownList) => (
+                          <li key={dropdownList} className='px-4 py-2 cursor-pointer hover:bg-zinc-800' onClick={closeDropdown}>
+                            {dropdownList}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                {/* <!-- Dropdown end */}
               </li>
               <li className='font-medium text-[17px] px-5 py-3 w-full active:bg-zinc-800'>
                 <Link to={'/'}>News</Link>
@@ -120,13 +143,13 @@ export default function Navbar() {
           <div className="right-text">
             <ul className='flex items-center gap-8'>
               <li>
-                <IoBookmarkOutline size={30} />
+                <IoBookmarkOutline size={30} className='cursor-pointer' />
               </li>
               <li>
-                <MdOutlineSearch size={30} />
+                <MdOutlineSearch size={30} className='cursor-pointer' />
               </li>
               <li>
-                <img src="/assets/img/images.jpeg" alt="IMG" className='w-10 rounded-full' />
+                <img src="/assets/img/images.jpeg" alt="IMG" className='w-10 rounded-full cursor-pointer' />
               </li>
             </ul>
           </div>
