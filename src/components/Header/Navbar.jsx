@@ -55,14 +55,14 @@ export default function Navbar() {
       <header className='bg-zinc-800 text-zinc-200 h-[70px]'>
         <div className="h-full flex gap-8 items-center px-4 sm:px-7 md:px-9 lg:px-14 max-w-7xl mx-auto justify-between">
           <div className="left-text flex items-center gap-5 me-auto">
-            <div className="logo me-auto lg:me-0 flex gap-2 justify-center items-center h-full">
+            <Link to={'/'} className="logo me-auto lg:me-0 flex gap-2 justify-center items-center h-full">
               <div className="img w-8">
                 <img src="/assets/icons/Favicon.svg" alt="IMG" />
               </div>
               <div className="name">
                 <h1 className='font-K2D text-2xl text-[#FF640A] hidden md:block'>AnimeSaga</h1>
               </div>
-            </div>
+            </Link>
             {/* <!-- lg-flex Navbar List start */}
             <ul className='hidden lg:flex gap-5 me-auto'>
               <li>

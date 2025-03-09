@@ -5,9 +5,9 @@ export default function Lookism() {
     return (
         <div>
             <div className="inset-0 hero-slider-gradient z-10 h-[100vh] w-full">
-                <div className="hero-content pt-[11rem] pl-[13rem]">
+                <div className="hero-content pt-[11rem] md:pl-[13rem] pl-12">
                     <div className="logo">
-                        <img src="/assets/img/Lookism logo.jpeg" alt="" className='w-[200px] sm:w-[250px] rotate-12' />
+                        <img src="/assets/img/Lookism logo.jpeg" alt="IMG" className='w-[200px] sm:w-[250px] rotate-12' />
                     </div>
                     <div className="movie-description flex items-center mt-8">
                         <span className="age-verification bg-zinc-700 text-zinc-200 font-workSans font-semibold text-sm px-2 py-1 rounded">16+</span>
