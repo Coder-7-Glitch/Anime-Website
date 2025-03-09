@@ -54,7 +54,7 @@ export default function About() {
         </div>
         {/* Card start */}
         <div
-          className="card-div bg-[#00000088] w-full h-full fixed left-0 top-0"
+          className="card-div bg-[#00000088] w-full h-full fixed left-0 top-0 hidden"
           ref={Card}
         >
           <div className="card bg-[#2c2c2c] rounded-xl lg:text-start text-center px-12 py-6 absolute md:w-[50%]  top-[25%] md:left-[25%] shadow-white shadow-lg">
