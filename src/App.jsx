@@ -6,6 +6,7 @@ import HomePage from "./Pages/HomePage";
 import Footer from "./components/Footer/Footer";
 import AboutPage from "./Pages/AboutPage";
 import LatestAnimePage from "./Pages/LatestAnimePage";
+import NewsPage from "./Pages/NewsPage";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about-page" element={<AboutPage />} />
         <Route path="/latest-anime" element={<LatestAnimePage />} />
+        <Route path="/news-page" element={<NewsPage />} />
       </Routes>
       <Footer />
     </>

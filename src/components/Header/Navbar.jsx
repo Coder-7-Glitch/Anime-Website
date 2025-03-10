@@ -29,13 +29,14 @@ export default function Navbar() {
     "Latest Shows",
   ];
   const profileLists = [
-    "Switch Account",
+    "My Profile",
+    "Sponsorship",
+    "Password",
     "Edit Profile",
-    "Account Settings",
     "My list",
     "History",
-    "Sponsorship",
     "Help And Support",
+    "Switch Account",
     "Delete Account",
     "Log Out",
   ];
@@ -150,7 +151,7 @@ export default function Navbar() {
                 {/* <!-- Dropdown end */}
               </li>
               <li>
-                <Link to={"/"} className="font-medium text-[17px]">
+                <Link to={"/news-page"} className="font-medium text-[17px]">
                   News
                 </Link>
               </li>
@@ -226,7 +227,7 @@ export default function Navbar() {
                     />
                   </button>
                   {isProfileOpen && (
-                    <div className="absolute left-[-4rem] z-10 mt-2 w-48 rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div className="absolute sm:left-[-4rem] left-[-6rem] z-10 mt-2 w-48 rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
                       <ul className="py-1 text-[15px] text-zinc-200">
                         {profileLists.map((profileLists) => (
                           <li
