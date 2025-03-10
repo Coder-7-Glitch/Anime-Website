@@ -28,18 +28,7 @@ export default function Navbar() {
     "Movies",
     "Latest Shows",
   ];
-  const profileLists = [
-    "My Profile",
-    "Sponsorship",
-    "Password",
-    "Edit Profile",
-    "My list",
-    "History",
-    "Help And Support",
-    "Switch Account",
-    "Delete Account",
-    "Log Out",
-  ];
+
   const [isOpen, setIsOpen] = useState();
   const dropdownBtn = useRef();
 
@@ -201,7 +190,7 @@ export default function Navbar() {
                 {/* <!-- Dropdown end */}
               </li>
               <li className="font-medium text-[17px] px-5 py-3 w-full active:bg-zinc-800">
-                <Link to={"/"}>News</Link>
+                <Link to={"/news-page"}>News</Link>
               </li>
             </ul>
             {/* <!-- Mobile Navbar List end */}
@@ -229,15 +218,36 @@ export default function Navbar() {
                   {isProfileOpen && (
                     <div className="absolute sm:left-[-4rem] left-[-6rem] z-10 mt-2 w-48 rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
                       <ul className="py-1 text-[15px] text-zinc-200">
-                        {profileLists.map((profileLists) => (
-                          <li
-                            key={profileLists}
-                            className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
-                            onClick={closeProfile}
-                          >
-                            {profileLists}
-                          </li>
-                        ))}
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/my-profile"}>My Profile</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/sponsorship"}>Sponsorship</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/password"}>Password</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/edit-profile"}>Edit Profile</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/my-list"}>My List</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/history"}>History</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/help"}>Help</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/switch-acc"}>Switch Account</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/delete-acc"}>Delete Account</Link>
+                        </li>
+                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                          <Link to={"/log-out"}>Log Out</Link>
+                        </li>
                       </ul>
                     </div>
                   )}
