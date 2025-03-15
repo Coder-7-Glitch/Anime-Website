@@ -141,6 +141,20 @@ export default function EditProfile() {
               />
             </div>
           </div>
+          <div className="form-group mt-6">
+            <div className="label mb-2 text-[#ff640a] text-[17px]">
+              <label htmlFor="Description">Description</label>
+            </div>
+            <div className="input w-full">
+              <textarea
+                name="Description"
+                id="Description"
+                required
+                placeholder="Enter Description"
+                className="resize-none w-full h-[300px] text-[17px] rounded-lg text-[#ff640a] p-3 border-[#ff640a] border bg-[#131212] outline-none placeholder:text-[#ff640a]"
+              ></textarea>
+            </div>
+          </div>
           <div className="form-group mt-6 lg:text-start text-center">
             <button
               type="submit"
