@@ -218,34 +218,64 @@ export default function Navbar() {
                   {isProfileOpen && (
                     <div className="absolute sm:left-[-4rem] left-[-6rem] z-10 mt-2 w-48 rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5">
                       <ul className="py-1 text-[15px] text-zinc-200">
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/my-profile"}>My Profile</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/sponsorship"}>Sponsorship</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/password"}>Password</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/edit-profile"}>Edit Profile</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/my-list"}>My List</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/history"}>History</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/help"}>Help</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/switch-acc"}>Switch Account</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/delete-acc"}>Delete Account</Link>
                         </li>
-                        <li className="px-4 py-2 cursor-pointer hover:bg-zinc-800" onClick={closeDropdown}>
+                        <li
+                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
+                          onClick={closeDropdown}
+                        >
                           <Link to={"/log-out"}>Log Out</Link>
                         </li>
                       </ul>
