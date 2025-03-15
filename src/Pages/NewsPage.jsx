@@ -9,7 +9,7 @@ export default function News() {
       <div className="xl:px-20 lg:px-12 md:px-10 px-4 py-20">
         <div className="heading flex items-center gap-3 py-8">
           <div className="w-[3px] h-[30px] bg-[#ff640a]"></div>
-          <h1 className="text-2xl">Latest Shows</h1>
+          <h1 className="text-2xl">Latest News</h1>
         </div>
         <Swiper
           modules={[A11y, Autoplay]}
