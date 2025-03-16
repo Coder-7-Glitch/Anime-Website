@@ -1,0 +1,25 @@
+{
+  "Personal": [
+    {
+      "name": "David Mctosh",
+      "userImg": "/assets/img/Profile img.png",
+      "birthDate": "01",
+      "birthMonth": "Jan",
+      "birthYear": "1989",
+      "Age": "35",
+      "Gender": "Male"
+    }
+  ],
+  "Other": [
+    {
+      "name": "David Mctosh",
+      "contactNo": "+9233341510291",
+      "email": "david.mc1@gmail.com"
+    }
+  ],
+  "Notes": [
+    {
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad, minus facilis iusto nobis quis in ipsa? Adipisci, laboriosam debitis provident architecto illum exercitationem, illo totam, obcaecati alias sapiente maxime."
+    }
+  ]
+}
