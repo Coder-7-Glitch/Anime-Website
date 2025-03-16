@@ -264,18 +264,6 @@ export default function Navbar() {
                           className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
                           onClick={closeDropdown}
                         >
-                          <Link to={"/switch-acc"}>Switch Account</Link>
-                        </li>
-                        <li
-                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
-                          onClick={closeDropdown}
-                        >
-                          <Link to={"/delete-acc"}>Delete Account</Link>
-                        </li>
-                        <li
-                          className="px-4 py-2 cursor-pointer hover:bg-zinc-800"
-                          onClick={closeDropdown}
-                        >
                           <Link to={"/log-out"}>Log Out</Link>
                         </li>
                       </ul>

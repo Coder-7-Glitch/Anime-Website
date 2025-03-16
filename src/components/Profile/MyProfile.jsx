@@ -2,6 +2,7 @@ import React from "react";
 import Personal from "./Profile_Cards/Personal";
 import Other from "./Profile_Cards/Other";
 import Notes from "./Profile_Cards/Notes";
+
 export default function MyProfile() {
   return (
     <div>
