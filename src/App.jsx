@@ -11,10 +11,8 @@ import MyProfile from "./components/Profile/MyProfile";
 import EditProfile from "./components/Profile/EditProfile";
 import Help from "./components/Profile/Help";
 import History from "./components/Profile/History";
-import LogOut from "./components/Profile/LogOut";
 import MyList from "./components/Profile/MyList";
 import Password from "./components/Profile/Password";
-import Sponsorship from "./components/Profile/Sponsorship";
 
 function App() {
   return (
@@ -29,13 +27,11 @@ function App() {
         {/* <!-- Pages end --> */}
         {/* <!-- Profile Pages start */}
         <Route path="/my-profile" element={<MyProfile />} />
-        <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/password" element={<Password />} />
         <Route path="/edit-profile" element={<EditProfile />} />
-        <Route path="/my-list" element={<Help />} />
+        <Route path="/my-list" element={<MyList />} />
         <Route path="/history" element={<History />} />
-        <Route path="/help" element={<MyList />} />
-        <Route path="/log-out" element={<LogOut />} />
+        <Route path="/help" element={<Help />} />
         {/* <!-- Profile Pages end */}
       </Routes>
       <Footer />

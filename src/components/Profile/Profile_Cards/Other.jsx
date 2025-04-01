@@ -1,11 +1,11 @@
 import React from 'react'
-import Profile_Cards from "../data/Profile_Cards.json"
+import Profile from "../data/Profile.json"
 
 export default function Other() {
   return (
     <div>
       {
-        Profile_Cards.Other.map((other, i) => (
+        Profile.Other.map((other, i) => (
           <div className="first-div bg-[#131212] px-5 py-6 rounded-[10px]" key={i}>
             <div className="first-detail flex gap-2">
               <p className='text-lg font-medium text-[#ff640a]'>Full Name: </p>

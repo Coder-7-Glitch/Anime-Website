@@ -1,10 +1,10 @@
 import React from "react";
-import Profile_Cards from "../data/Profile_Cards.json";
+import Profile from "../data/Profile.json";
 
 export default function Personal() {
   return (
     <div className="w-full">
-      {Profile_Cards.Personal.map((personal, i) => (
+      {Profile.Personal.map((personal, i) => (
         <div className="personal-details-card flex gap-8 w-full" key={i}>
           <div className="first-div bg-[#131212] px-3 py-6 rounded-[10px] w-full">
             <div className="img">
